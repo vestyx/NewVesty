@@ -1,0 +1,122 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Alert = Instance.new("ScreenGui")
+local Alert_Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local C = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+
+--Properties:
+
+Alert.Name = "Alert"
+Alert.Parent = game.CoreGui
+Alert.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Alert_Frame.Name = "Alert_Frame"
+Alert_Frame.Parent = Alert
+Alert_Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Alert_Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Alert_Frame.Position = UDim2.new(0.499535322, 0, 0.498830199, 0)
+Alert_Frame.Size = UDim2.new(0, 10000, 0, 20000)
+
+TextLabel.Parent = Alert_Frame
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.5, 0, 0.492350012, 0)
+TextLabel.Size = UDim2.new(0, 344, 0, 62)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "WARNING!"
+TextLabel.TextColor3 = Color3.fromRGB(255, 149, 57)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Alert_Frame
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.500050008, 0, 0.499974996, 0)
+TextLabel_2.Size = UDim2.new(0, 533, 0, 121)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "WARNING! Dont join discord.gg/vesty its not real vesty, someone pretending to be me.\nto join real Vesty Server you can go to discord.gg/vsty also script at discord.gg/vesty is FAKE! all his script is bank stealer and he's stealing video.\nReal Vesty V5 Server: discord.gg/vsty"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 20.000
+TextLabel_2.TextStrokeTransparency = 0.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = Alert_Frame
+TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.500049949, 0, 0.512124956, 0)
+TextLabel_3.Size = UDim2.new(0, 191, 0, 29)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.Text = "Click this button if you already read and join a discord.gg/vsty"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 20.000
+TextLabel_3.TextStrokeTransparency = 0.000
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = Alert_Frame
+TextLabel_4.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.5, 0, 0.503724933, 0)
+TextLabel_4.Size = UDim2.new(0, 362, 0, 29)
+TextLabel_4.Font = Enum.Font.GothamBold
+TextLabel_4.Text = "oxy's Discord ID: 434717530221969409 / oxy#0927"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 20.000
+TextLabel_4.TextStrokeTransparency = 0.000
+TextLabel_4.TextWrapped = true
+
+C.Name = "C"
+C.Parent = Alert
+C.AnchorPoint = Vector2.new(0.5, 0.5)
+C.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+C.BorderSizePixel = 0
+C.Position = UDim2.new(0.49999997, 0, 0.791276813, 0)
+C.Size = UDim2.new(0, 246, 0, 61)
+C.Font = Enum.Font.GothamBold
+C.Text = ""
+C.TextColor3 = Color3.fromRGB(255, 255, 255)
+C.TextSize = 13.000
+C.TextWrapped = true
+
+ImageLabel.Parent = C
+ImageLabel.Active = true
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Size = UDim2.new(0, 62, 0, 61)
+ImageLabel.Image = "rbxassetid://12901468994"
+
+TextLabel_5.Parent = C
+TextLabel_5.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.632552624, 0, 0.491778255, 0)
+TextLabel_5.Size = UDim2.new(0, 156, 0, 34)
+TextLabel_5.Font = Enum.Font.GothamBold
+TextLabel_5.Text = "Continue"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 20.000
+TextLabel_5.TextStrokeTransparency = 0.000
+TextLabel_5.TextWrapped = true
+
+C.MouseButton1Down:connect(function()
+    TextLabel_5.Text = "Closing in 3sec"
+    wait(3)
+    local FIX = game.CoreGui.Alert
+    FIX:Destroy()
+ end)
